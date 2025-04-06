@@ -1,0 +1,24 @@
+.message-card {
+	font-family: sans-serif;
+	padding: 10px;
+	margin-bottom: 8px;
+	border-radius: 16px;
+	background-color: #ffffff;
+  
+	.time {
+	  width: 100%;
+	  text-align: right;
+	  color: #525252;
+	}
+  
+	.user {
+	  font-weight: bold;
+	  color: #265c66;
+	}
+  
+	.text {
+	  width: 100%;
+	  white-space: normal;
+	  word-wrap: break-word;
+	}
+  }

@@ -1,0 +1,14 @@
+<div class="login-container">
+    <form action="" class="login-form">
+        <label for="" class="login-label">Как вас зовут?</label>
+        <input 
+            name="username" 
+            type="text" 
+            class="login-input" 
+            placeholder="введите ваше имя" 
+            [(ngModel)]="username" 
+            (keyup.enter)="login()"
+        >
+        <button class="login-send-btn" (click)="login()">войти</button>
+    </form>
+</div>

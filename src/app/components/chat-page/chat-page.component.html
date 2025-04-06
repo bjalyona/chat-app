@@ -1,0 +1,24 @@
+
+<div class="chat-container">
+    <div #scroll_target class="message-card__wrapper">
+        <div *ngFor="let m of messages" class="message">  
+            <app-message-card [message]="m"></app-message-card>      
+            
+        </div>
+        
+    </div>
+    <div class="message-input">
+        <form class="message-form" action="" >
+            <input 
+                class="message-form__input"
+                name="message" 
+                type="text" 
+                placeholder="введите сообщение"  
+                [(ngModel)]="message" 
+                (keyup.enter)="sendMessage()"
+            >
+            <button class="chat-send-btn" (click)="sendMessage()">send</button>
+        </form>
+    </div>
+</div>
+
